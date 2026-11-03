@@ -2,6 +2,8 @@ import {
 	createSSRApp
 } from "vue";
 import App from "./App.vue";
+import "./common.css";
+
 export function createApp() {
 	const app = createSSRApp(App);
 	return {

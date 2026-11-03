@@ -1,17 +1,15 @@
 <script>
+import store from './utils/store'
+
 export default {
-  onLaunch: function () {
-    console.log('App Launch')
-  },
-  onShow: function () {
-    console.log('App Show')
-  },
-  onHide: function () {
-    console.log('App Hide')
-  },
+  onLaunch() {
+    store.initIfEmpty()
+      .then(() => store.getRecords())
+      .catch(() => {})
+  }
 }
 </script>
 
 <style>
-/*每个页面公共css */
+/* 全局样式已移至 src/common.css（main.js 中导入），确保构建时不会丢失 */
 </style>

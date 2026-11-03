@@ -65,8 +65,17 @@
     "mp-toutiao" : {
         "usingComponents" : true
     },
-    "uniStatistics": {  
+    "uniStatistics": {
         "enable": false
+    },
+    "h5": {
+        "title": "时记 - 时间追踪",
+        "router": {
+            "mode": "hash"
+        },
+        "rpxCalcMaxDeviceWidth": 480,
+        "rpxCalcBaseDeviceWidth": 375,
+        "rpxCalcIncludeWidth": 750
     },
     "vueVersion" : "3"
 }
